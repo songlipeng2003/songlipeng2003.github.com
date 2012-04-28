@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://songlipeng2003.github.com
-title: My Octopress Blog
+title: '舞命小丢'
 subtitle: A blogging framework for hackers.
-author: Your Name
+author: '舞命小丢'
 simple_search: http://google.com/search
 description:
 
@@ -58,13 +58,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: songlipeng2003
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: songlipeng2003
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
@@ -85,15 +85,15 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user:
+delicious_user: songlipeng2003
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: 7d-life
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-1862885-12
 
 # Facebook Like
 facebook_like: false
