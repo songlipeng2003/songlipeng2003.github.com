@@ -9,8 +9,7 @@
   <meta name="author" content="舞命小丢">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="一直在寻找一个好的部署工具，以前用java的时候，经常过maven，ant，更多是用来构建，而不是部署。 前一段使用cakephp一直也想找一个这样的工具，也是没有找到。 开始学习RoR的开发，在ruby-china的代码中发现了capistrano 这个工具，看了一下介绍，感觉就是我理想中工具 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -31,6 +30,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1862885-12']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -58,6 +69,7 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about-us">About US</a></li>
 </ul>
 
 </nav>
@@ -65,6 +77,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/25/use-capistrano-to-deploy/">Use Capistrano to Deploy</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-25T13:09:00+08:00" pubdate data-updated="true">Apr 25<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一直在寻找一个好的部署工具，以前用java的时候，经常过maven，ant，更多是用来构建，而不是部署。</p>
+
+<p>前一段使用cakephp一直也想找一个这样的工具，也是没有找到。</p>
+
+<p>开始学习RoR的开发，在ruby-china的代码中发现了<a href="https://github.com/capistrano/capistrano">capistrano</a> 这个工具，看了一下介绍，感觉就是我理想中工具</p>
+
+<p>支持多服务器，服务器重启，自定义任务，版本切换，版本管理工具支持，可以连接ssh，对服务器操作</p>
+
+<p>而且还有很多第三方扩展：
+cakephp扩展capcake https://github.com/jadb/capcake
+play扩展 http://www.playframework.org/modules/capistrano</p>
+
+<p>ssh-keygen -p
+cd ~/.ssh
+cp id_rsa.pub authorized_keys
+scp -p ~/.ssh/authorized_keys hrothgar:.ssh/</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -94,7 +157,16 @@
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><p>以前在上大学那会比较清闲，使用wordpress写了一些blog，毕业之后就荒废了，一直想重新开Blog。</p>
+
+<p>一方面感觉太忙了，另一方面，感觉又要假设一个空间，wordpress添加很多插件，而且它对代码显示的支持我一直认为不够好</p>
+
+<p>看到很多人开始github上写blog，感觉很方面，可以想保存代码那样保存每个版本，感觉很不错啊。</p>
+
+<p>而且发现了Octopress，对代码显示的支持非常好，使用github管理，之间发布，非常方便。</p>
+
+<p>参考：
+* <a href="http://fancyoung.com/blog/octopress-study/">技术博客利器——Octopress</a></p>
 </div>
   
   
@@ -113,6 +185,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/25/use-capistrano-to-deploy/">use capistrano to deploy</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/24/first-post/">first post</a>

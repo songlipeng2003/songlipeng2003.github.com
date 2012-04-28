@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[舞命小丢]]></title>
-  <link href="http://songlipeng2003.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: ruby | 舞命小丢]]></title>
+  <link href="http://songlipeng2003.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://songlipeng2003.github.com/"/>
   <updated>2012-04-28T11:37:22+08:00</updated>
   <id>http://songlipeng2003.github.com/</id>
@@ -34,24 +34,6 @@ play扩展 http://www.playframework.org/modules/capistrano</p>
 cd ~/.ssh
 cp id_rsa.pub authorized_keys
 scp -p ~/.ssh/authorized_keys hrothgar:.ssh/</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[first post]]></title>
-    <link href="http://songlipeng2003.github.com/blog/2012/04/24/first-post/"/>
-    <updated>2012-04-24T15:14:00+08:00</updated>
-    <id>http://songlipeng2003.github.com/blog/2012/04/24/first-post</id>
-    <content type="html"><![CDATA[<p>以前在上大学那会比较清闲，使用wordpress写了一些blog，毕业之后就荒废了，一直想重新开Blog。</p>
-
-<p>一方面感觉太忙了，另一方面，感觉又要假设一个空间，wordpress添加很多插件，而且它对代码显示的支持我一直认为不够好</p>
-
-<p>看到很多人开始github上写blog，感觉很方面，可以想保存代码那样保存每个版本，感觉很不错啊。</p>
-
-<p>而且发现了Octopress，对代码显示的支持非常好，使用github管理，之间发布，非常方便。</p>
-
-<p>参考：
-* <a href="http://fancyoung.com/blog/octopress-study/">技术博客利器——Octopress</a></p>
 ]]></content>
   </entry>
   
