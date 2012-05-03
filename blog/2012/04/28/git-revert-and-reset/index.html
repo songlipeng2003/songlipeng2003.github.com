@@ -5,14 +5,16 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - 舞命小丢</title>
+  <title>git revert and reset - 舞命小丢</title>
   <meta name="author" content="舞命小丢">
 
   
-  <meta name="description" content="Blog Archive 2012 git revert and reset
-Apr 28 2012 posted in git use capistrano to deploy
-Apr 25 2012 posted in ruby first post
-Apr 24 2012 Recent &hellip;">
+  <meta name="description" content="git revert 是撤销某次操作，此次操作之前的commit都会被保留 git reset 是撤销某次提交，但是此次之后的修改都会被退回到暂存区 Git的一些常用的撤销提交版本的的命令： 1
+2
+3
+4
+git revert HEAD ＃撤销前一次 commit
+git revert HEAD &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +23,7 @@ Apr 24 2012 Recent &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://songlipeng2003.github.com/blog/archives">
+  <link rel="canonical" href="http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -79,60 +81,113 @@ Apr 24 2012 Recent &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Git Revert and Reset</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-28T11:44:00+08:00" pubdate data-updated="true">Apr 28<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>git revert 是撤销某次操作，此次操作之前的commit都会被保留</p>
 
-  
-  <h2>2012</h2>
+<p>git reset 是撤销某次提交，但是此次之后的修改都会被退回到暂存区</p>
 
-<article>
-  
-<h1><a href="/blog/2012/04/28/git-revert-and-reset/">git revert and reset</a></h1>
-<time datetime="2012-04-28T11:44:00+08:00" pubdate><span class='month'>Apr</span> <span class='day'>28</span> <span class='year'>2012</span></time>
+<p>Git的一些常用的撤销提交版本的的命令：</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/git/'>git</a></span>
-</footer>
-
-
-</article>
-
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git revert HEAD                ＃撤销前一次 commit
+</span><span class='line'>git revert HEAD^               ＃撤销前前一次 commit
+</span><span class='line'>＃撤销指定的版本，撤销也会作为一次提交进行保存。
+</span><span class='line'>git revert commit 7de3c367b8ee77e27371f8f6761b8f5909fcce43</span></code></pre></td></tr></table></div></figure>
 
 
-<article>
-  
-<h1><a href="/blog/2012/04/25/use-capistrano-to-deploy/">use capistrano to deploy</a></h1>
-<time datetime="2012-04-25T13:09:00+08:00" pubdate><span class='month'>Apr</span> <span class='day'>25</span> <span class='year'>2012</span></time>
+<p><strong>相关内容</strong></p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
+<p><a href="http://book.git-scm.com/4_undoing_in_git_-_reset,_checkout_and_revert.html">Git Community Book</a></p>
 
+<p><a href="http://rogerdudler.github.com/git-guide/index.zh.html">非常好的git - 简易指南</a></p>
 
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/04/24/first-post/">first post</a></h1>
-<time datetime="2012-04-24T15:14:00+08:00" pubdate><span class='month'>Apr</span> <span class='day'>24</span> <span class='year'>2012</span></time>
-
-
-</article>
-
+<p><a href="http://blog.microsuncn.com/?p=1559">Git revert 撤销某个提交版本</a></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">舞命小丢</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-28T11:44:00+08:00" pubdate data-updated="true">Apr 28<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset/" data-via="songlipeng2003" data-counturl="http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/04/25/use-capistrano-to-deploy/" title="Previous Post: use capistrano to deploy">&laquo; use capistrano to deploy</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -232,7 +287,10 @@ Apr 24 2012 Recent &hellip;">
       var disqus_shortname = '7d-life';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset/';
+        var disqus_url = 'http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

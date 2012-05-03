@@ -4,7 +4,7 @@
   <title><![CDATA[舞命小丢]]></title>
   <link href="http://songlipeng2003.github.com/atom.xml" rel="self"/>
   <link href="http://songlipeng2003.github.com/"/>
-  <updated>2012-04-24T15:14:15+08:00</updated>
+  <updated>2012-04-28T12:15:32+08:00</updated>
   <id>http://songlipeng2003.github.com/</id>
   <author>
     <name><![CDATA[舞命小丢]]></name>
@@ -14,11 +14,75 @@
 
   
   <entry>
+    <title type="html"><![CDATA[git revert and reset]]></title>
+    <link href="http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset/"/>
+    <updated>2012-04-28T11:44:00+08:00</updated>
+    <id>http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset</id>
+    <content type="html"><![CDATA[<p>git revert 是撤销某次操作，此次操作之前的commit都会被保留</p>
+
+<p>git reset 是撤销某次提交，但是此次之后的修改都会被退回到暂存区</p>
+
+<p>Git的一些常用的撤销提交版本的的命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git revert HEAD                ＃撤销前一次 commit
+</span><span class='line'>git revert HEAD^               ＃撤销前前一次 commit
+</span><span class='line'>＃撤销指定的版本，撤销也会作为一次提交进行保存。
+</span><span class='line'>git revert commit 7de3c367b8ee77e27371f8f6761b8f5909fcce43</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>相关内容</strong></p>
+
+<p><a href="http://book.git-scm.com/4_undoing_in_git_-_reset,_checkout_and_revert.html">Git Community Book</a></p>
+
+<p><a href="http://rogerdudler.github.com/git-guide/index.zh.html">非常好的git - 简易指南</a></p>
+
+<p><a href="http://blog.microsuncn.com/?p=1559">Git revert 撤销某个提交版本</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[use capistrano to deploy]]></title>
+    <link href="http://songlipeng2003.github.com/blog/2012/04/25/use-capistrano-to-deploy/"/>
+    <updated>2012-04-25T13:09:00+08:00</updated>
+    <id>http://songlipeng2003.github.com/blog/2012/04/25/use-capistrano-to-deploy</id>
+    <content type="html"><![CDATA[<p>一直在寻找一个好的部署工具，以前用java的时候，经常过maven，ant，更多是用来构建，而不是部署。</p>
+
+<p>前一段使用cakephp一直也想找一个这样的工具，也是没有找到。</p>
+
+<p>开始学习RoR的开发，在ruby-china的代码中发现了<a href="https://github.com/capistrano/capistrano">capistrano</a> 这个工具，看了一下介绍，感觉就是我理想中工具</p>
+
+<p>支持多服务器，服务器重启，自定义任务，版本切换，版本管理工具支持，可以连接ssh，对服务器操作</p>
+
+<p>而且还有很多第三方扩展：
+cakephp扩展capcake https://github.com/jadb/capcake
+play扩展 http://www.playframework.org/modules/capistrano</p>
+
+<p>ssh-keygen -p
+cd ~/.ssh
+cp id_rsa.pub authorized_keys
+scp -p ~/.ssh/authorized_keys hrothgar:.ssh/</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[first post]]></title>
     <link href="http://songlipeng2003.github.com/blog/2012/04/24/first-post/"/>
     <updated>2012-04-24T15:14:00+08:00</updated>
     <id>http://songlipeng2003.github.com/blog/2012/04/24/first-post</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>以前在上大学那会比较清闲，使用wordpress写了一些blog，毕业之后就荒废了，一直想重新开Blog。</p>
+
+<p>一方面感觉太忙了，另一方面，感觉又要假设一个空间，wordpress添加很多插件，而且它对代码显示的支持我一直认为不够好</p>
+
+<p>看到很多人开始github上写blog，感觉很方面，可以想保存代码那样保存每个版本，感觉很不错啊。</p>
+
+<p>而且发现了Octopress，对代码显示的支持非常好，使用github管理，之间发布，非常方便。</p>
+
+<p>参考：
+* <a href="http://fancyoung.com/blog/octopress-study/">技术博客利器——Octopress</a></p>
 ]]></content>
   </entry>
   
