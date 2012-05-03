@@ -11,7 +11,7 @@ git reset 是撤销某次提交，但是此次之后的修改都会被退回到�
 
 Git的一些常用的撤销提交版本的的命令：
 
-{% codeblock%}
+{% codeblock %}
 git revert HEAD                ＃撤销前一次 commit
 git revert HEAD^               ＃撤销前前一次 commit
 ＃撤销指定的版本，撤销也会作为一次提交进行保存。

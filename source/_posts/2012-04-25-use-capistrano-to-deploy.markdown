@@ -14,10 +14,15 @@ categories: ruby
 支持多服务器，服务器重启，自定义任务，版本切换，版本管理工具支持，可以连接ssh，对服务器操作
 
 而且还有很多第三方扩展：
-cakephp扩展capcake https://github.com/jadb/capcake
-play扩展 http://www.playframework.org/modules/capistrano
 
+[cakephp扩展-capcake](https://github.com/jadb/capcake)
+
+[play扩展](http://www.playframework.org/modules/capistrano)
+
+
+{% codeblock %}
 ssh-keygen -p
 cd ~/.ssh
 cp id_rsa.pub authorized_keys
 scp -p ~/.ssh/authorized_keys hrothgar:.ssh/
+{% endcodeblock %}
