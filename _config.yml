@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://songlipeng2003.github.com
+url: http://7d-life.com
 title: '舞命小丢'
-subtitle: A blogging framework for hackers.
+subtitle: '舞命小丢的技术Blog'
 author: '舞命小丢'
 simple_search: http://google.com/search
-description:
+description: 'mac ubuntu ruby php java' 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -69,15 +69,15 @@ twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
 twitter_show_follower_count: false
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:
+googleplus_user: 117364342477104303578
 googleplus_hidden: false
 
 # Pinboard
@@ -90,10 +90,10 @@ delicious_count: 3
 
 # Disqus Comments
 disqus_short_name: 7d-life
-disqus_show_comment_count: false
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-1862885-12
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
