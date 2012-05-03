@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: git | 舞命小丢]]></title>
-  <link href="http://songlipeng2003.github.com/blog/categories/git/atom.xml" rel="self"/>
-  <link href="http://songlipeng2003.github.com/"/>
-  <updated>2012-04-28T12:15:32+08:00</updated>
-  <id>http://songlipeng2003.github.com/</id>
+  <link href="http://7d-life.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://7d-life.com/"/>
+  <updated>2012-05-03T10:16:20+08:00</updated>
+  <id>http://7d-life.com/</id>
   <author>
     <name><![CDATA[舞命小丢]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[git revert and reset]]></title>
-    <link href="http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset/"/>
+    <link href="http://7d-life.com/blog/2012/04/28/git-revert-and-reset/"/>
     <updated>2012-04-28T11:44:00+08:00</updated>
-    <id>http://songlipeng2003.github.com/blog/2012/04/28/git-revert-and-reset</id>
+    <id>http://7d-life.com/blog/2012/04/28/git-revert-and-reset</id>
     <content type="html"><![CDATA[<p>git revert 是撤销某次操作，此次操作之前的commit都会被保留</p>
 
 <p>git reset 是撤销某次提交，但是此次之后的修改都会被退回到暂存区</p>
