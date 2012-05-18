@@ -4,7 +4,7 @@
   <title><![CDATA[舞命小丢]]></title>
   <link href="http://7d-life.com/atom.xml" rel="self"/>
   <link href="http://7d-life.com/"/>
-  <updated>2012-05-18T17:38:06+08:00</updated>
+  <updated>2012-05-18T18:07:17+08:00</updated>
   <id>http://7d-life.com/</id>
   <author>
     <name><![CDATA[舞命小丢]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[install rmagick fail on macbook lion]]></title>
+    <link href="http://7d-life.com/blog/2012/05/18/install-rmagick-fail/"/>
+    <updated>2012-05-18T17:59:00+08:00</updated>
+    <id>http://7d-life.com/blog/2012/05/18/install-rmagick-fail</id>
+    <content type="html"><![CDATA[<p>错误信息</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ gem install rmagick
+</span><span class='line'>Buildingnative extensions.  This could take a while...ERROR:  Error installing rmagick:        ERROR:Failed to build gem native extension.        /Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/bin/ruby extconf.rb
+</span><span class='line'>checking forRuby version &gt;=1.8.5... yes
+</span><span class='line'>extconf.rb:128:UseRbConfig instead of obsolete and deprecated Config.checking for clang... yes
+</span><span class='line'>checking forMagick-config... yes
+</span><span class='line'>checking forImageMagick version &gt;=6.4.9... yes
+</span><span class='line'>checking for HDRI disabled version of ImageMagick... yes
+</span><span class='line'>checking for stdint.h...*** extconf.rb failed ***Couldnot create Makefile due to some reason, probably lack of
+</span><span class='line'>necessary libraries and/or headers.  Check the mkmf.log file for more
+</span><span class='line'>details.  You may need configuration options.Provided configuration options:        --with-opt-dir
+</span><span class='line'>        --without-opt-dir
+</span><span class='line'>        --with-opt-include
+</span><span class='line'>        --without-opt-include=${opt-dir}/include
+</span><span class='line'>        --with-opt-lib
+</span><span class='line'>        --without-opt-lib=${opt-dir}/lib
+</span><span class='line'>        --with-make-prog
+</span><span class='line'>        --without-make-prog
+</span><span class='line'>        --srcdir=.        --curdir
+</span><span class='line'>        --ruby=/Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/bin/ruby
+</span><span class='line'>/Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/lib/ruby/1.9.1/mkmf.rb:381:in`try_do': The compiler failed to generate an executable file. (RuntimeError)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>需要卸载了，重新安装</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew uninstall imagemagick
+</span><span class='line'>brew install imagemagick --disable-openmp</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[use devise on legacy database width md5]]></title>
