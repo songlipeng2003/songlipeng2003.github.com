@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: ruby | 舞命小丢]]></title>
-  <link href="http://7d-life.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <title><![CDATA[Category: devise | 舞命小丢]]></title>
+  <link href="http://7d-life.com/blog/categories/devise/atom.xml" rel="self"/>
   <link href="http://7d-life.com/"/>
   <updated>2012-05-18T17:38:06+08:00</updated>
   <id>http://7d-life.com/</id>
@@ -146,55 +146,6 @@ end
 <h3>参考信息:</h3>
 
 <p><a href="https://github.com/plataformatec/devise/wiki/How-To:-Create-a-custom-encryptor">How-To:-Create-a-custom-encryptor</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[attr attr_accessor attr_accessible attr_protected]]></title>
-    <link href="http://7d-life.com/blog/2012/05/02/attr-attr-accessor-attr-accessible/"/>
-    <updated>2012-05-02T21:39:00+08:00</updated>
-    <id>http://7d-life.com/blog/2012/05/02/attr-attr-accessor-attr-accessible</id>
-    <content type="html"><![CDATA[<p>attr_accessor是Ruby提供的方法，相当于帮你生产读写方法，同时兼备 attr_reader attr_writer 的作用</p>
-
-<p>attr_reader 相当于生产读方法</p>
-
-<p>attr_writer 相当于生产写方法</p>
-
-<p>attr 只能带一个符号参数，第二个参数是一个 bool 参数，用于指示是否为头一个符号参数产生写方法。它的默认值是 false , 不产生写方法。</p>
-
-<p>attr_accessible是rals的提供的方法，指的是能某些字段可以通过前端来赋值</p>
-
-<p>attr_protected是rals的提供的方法，作用恰好和attr_accessible相反，指定某些字段不能够前端来赋值</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[use capistrano to deploy]]></title>
-    <link href="http://7d-life.com/blog/2012/04/25/use-capistrano-to-deploy/"/>
-    <updated>2012-04-25T13:09:00+08:00</updated>
-    <id>http://7d-life.com/blog/2012/04/25/use-capistrano-to-deploy</id>
-    <content type="html"><![CDATA[<p>一直在寻找一个好的部署工具，以前用java的时候，经常过maven，ant，更多是用来构建，而不是部署。</p>
-
-<p>前一段使用cakephp一直也想找一个这样的工具，也是没有找到。</p>
-
-<p>开始学习RoR的开发，在ruby-china的代码中发现了<a href="https://github.com/capistrano/capistrano">capistrano</a> 这个工具，看了一下介绍，感觉就是我理想中工具</p>
-
-<p>支持多服务器，服务器重启，自定义任务，版本切换，版本管理工具支持，可以连接ssh，对服务器操作</p>
-
-<p>而且还有很多第三方扩展：</p>
-
-<p><a href="https://github.com/jadb/capcake">cakephp扩展-capcake</a></p>
-
-<p><a href="http://www.playframework.org/modules/capistrano">play扩展</a></p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh-keygen -p
-</span><span class='line'>cd ~/.ssh
-</span><span class='line'>cp id_rsa.pub authorized_keys
-</span><span class='line'>scp -p ~/.ssh/authorized_keys hrothgar:.ssh/</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   

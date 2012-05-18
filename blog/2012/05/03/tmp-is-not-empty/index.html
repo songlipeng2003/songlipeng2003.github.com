@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>/tmp/目录没有空间 - 舞命小丢</title>
+  <meta name="author" content="舞命小丢">
+
+  
+  <meta name="description" content="这是错误信息，查了很多都没有查到问题所在 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://7d-life.com/blog/2012/05/03/tmp-is-not-empty">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="舞命小丢" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1862885-12']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">舞命小丢</a></h1>
+  
+    <h2>舞命小丢的技术Blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:7d-life.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about-us">About US</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">/tmp/目录没有空间</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-03T21:36:00+08:00" pubdate data-updated="true">May 3<span>rd</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>这是错误信息，查了很多都没有查到问题所在</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[ pid=14193 thr=71528440 file=utils.rb:176 time=2012-05-03 21:15:35.137 ]: *** Exception Errno::ENOENT in application (No such file or directory - /tmp/RackRewindableInput20120503-14193-1w1x37q.lock) (process 14193, thread #&lt;Thread:0x0000000886dff0>):
+</span><span class='line'>  from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:346:in `rmdir'
+</span><span class='line'>  from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:346:in `rmdir'
+</span><span class='line'>  from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:338:in `ensure in locking'
+</span><span class='line'>  from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:338:in `locking'
+</span><span class='line'>  from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:144:in `block in initialize'
+</span><span class='line'>  from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tmpdir.rb:133:in `create'
+</span><span class='line'>  from /usr/local/rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tempfile.rb:134:in `initialize'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/utils/rewindable_input.rb:86:in `new'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/utils/rewindable_input.rb:86:in `make_rewindable'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/utils/rewindable_input.rb:30:in `read'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/request.rb:202:in `POST'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:26:in `method_override'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:14:in `call'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/activesupport-3.2.2/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:143:in `pass'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:155:in `invalidate'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:71:in `call!'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/railties-3.2.2/lib/rails/engine.rb:479:in `call'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/railties-3.2.2/lib/rails/application.rb:220:in `call'
+</span><span class='line'>  from /opt/www/memebox/shared/bundle/ruby/1.9.1/gems/railties-3.2.2/lib/rails/railtie/configurable.rb:30:in `method_missing'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server.rb:180:in `start'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+</span><span class='line'>  from &lt;internal:prelude>:10:in `synchronize'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+</span><span class='line'>  from /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/helper-scripts/passenger-spawn-server:99:in `&lt;main>'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>运行下面命令，查看磁盘空间是否够用</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dh -h</span></code></pre></td></tr></table></div></figure>
+
+
+<p>我们的服务器系统只有16G，其他都挂载了/opt,前两天转移数据放了一个大文件7个G的文件，把16G占满了，当然写不进去了。终于解决了。呜呜，吸取教训了。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">舞命小丢</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-03T21:36:00+08:00" pubdate data-updated="true">May 3<span>rd</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/05/02/attr-attr-accessor-attr-accessible/" title="Previous Post: attr attr_accessor attr_accessible attr_protected">&laquo; attr attr_accessor attr_accessible attr_protected</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/05/18/use-devise-on-legacy-database-width-md5/" title="Next Post: use devise on legacy database width md5">use devise on legacy database width md5 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/05/18/use-devise-on-legacy-database-width-md5/">use devise on legacy database width md5</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/03/tmp-is-not-empty/">/tmp/目录没有空间</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/02/attr-attr-accessor-attr-accessible/">attr attr_accessor attr_accessible attr_protected</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/28/git-revert-and-reset/">git revert and reset</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/25/use-capistrano-to-deploy/">use capistrano to deploy</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/songlipeng2003">@songlipeng2003</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'songlipeng2003',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("songlipeng2003", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/songlipeng2003" class="twitter-follow-button" data-show-count="false">Follow @songlipeng2003</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/songlipeng2003?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/songlipeng2003">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/117364342477104303578?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - 舞命小丢 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = '7d-life';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://7d-life.com/blog/2012/05/03/tmp-is-not-empty/';
+        var disqus_url = 'http://7d-life.com/blog/2012/05/03/tmp-is-not-empty/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
