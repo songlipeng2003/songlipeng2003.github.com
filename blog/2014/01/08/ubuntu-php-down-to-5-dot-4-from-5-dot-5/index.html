@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Install Rmagick Fail on Macbook Lion - 舞命小丢</title>
+  <title>Ubuntu Php Down to 5.4 From 5.5 - 舞命小丢</title>
   <meta name="author" content="舞命小丢">
 
   
-  <meta name="description" content="错误信息 1
+  <meta name="description" content="http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10 1
 2
 3
 4
@@ -28,9 +28,7 @@
 17
 18
 19
-20
-$ gem install rmagick
-Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
+# upgrade &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -39,7 +37,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://7d-life.com/blog/2012/05/18/install-rmagick-fail">
+  <link rel="canonical" href="http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="舞命小丢" type="application/atom+xml">
@@ -102,7 +100,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Install Rmagick Fail on Macbook Lion</h1>
+      <h1 class="entry-title">Ubuntu Php Down to 5.4 From 5.5</h1>
     
     
       <p class="meta">
@@ -118,7 +116,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   
 
 
-<time datetime="2012-05-18T17:59:00+08:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
+<time datetime="2014-01-08T22:14:52+08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2014</time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://7d-life.com">Comments</a>
@@ -128,7 +126,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   </header>
 
 
-<div class="entry-content"><p>错误信息</p>
+<div class="entry-content"><p><a href="http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10">http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10</a></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -149,35 +147,25 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 <span class='line-number'>17</span>
 <span class='line-number'>18</span>
 <span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ gem install rmagick
-</span><span class='line'>Buildingnative extensions.  This could take a while...ERROR:  Error installing rmagick:        ERROR:Failed to build gem native extension.        /Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/bin/ruby extconf.rb
-</span><span class='line'>checking forRuby version &gt;=1.8.5... yes
-</span><span class='line'>extconf.rb:128:UseRbConfig instead of obsolete and deprecated Config.checking for clang... yes
-</span><span class='line'>checking forMagick-config... yes
-</span><span class='line'>checking forImageMagick version &gt;=6.4.9... yes
-</span><span class='line'>checking for HDRI disabled version of ImageMagick... yes
-</span><span class='line'>checking for stdint.h...*** extconf.rb failed ***Couldnot create Makefile due to some reason, probably lack of
-</span><span class='line'>necessary libraries and/or headers.  Check the mkmf.log file for more
-</span><span class='line'>details.  You may need configuration options.Provided configuration options:        --with-opt-dir
-</span><span class='line'>        --without-opt-dir
-</span><span class='line'>        --with-opt-include
-</span><span class='line'>        --without-opt-include=${opt-dir}/include
-</span><span class='line'>        --with-opt-lib
-</span><span class='line'>        --without-opt-lib=${opt-dir}/lib
-</span><span class='line'>        --with-make-prog
-</span><span class='line'>        --without-make-prog
-</span><span class='line'>        --srcdir=.        --curdir
-</span><span class='line'>        --ruby=/Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/bin/ruby
-</span><span class='line'>/Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/lib/ruby/1.9.1/mkmf.rb:381:in`try_do': The compiler failed to generate an executable file. (RuntimeError)</span></code></pre></td></tr></table></div></figure>
-
-
-<p>需要卸载了，重新安装</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>brew uninstall imagemagick
-</span><span class='line'>brew install imagemagick --disable-openmp</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'># upgrade system, so you can add to ignore all updates later
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>
+</span><span class='line'># remove your php, apache, etc
+</span><span class='line'>sudo apt-get purge apache2 php5 libapache2-mod-php5 # add here your server packages
+</span><span class='line'>
+</span><span class='line'># change repositories to raring  (with backup)
+</span><span class='line'>sudo sed -i.bak "s/saucy/raring/g" /etc/apt/sources.list
+</span><span class='line'>
+</span><span class='line'># update and install server packages
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get install apache2 php5 libapache2-mod-php5 phpmyadmin #add here packages you need and make sure you install php5.4 and apache2.2
+</span><span class='line'>
+</span><span class='line'># change repositories back to saucy
+</span><span class='line'>sudo sed -i "s/raring/saucy/g" /etc/apt/sources.list
+</span><span class='line'>
+</span><span class='line'># ignore all current upgrades (package hold)
+</span><span class='line'>sudo apt-mark hold `aptitude -F%p --disable-columns search ~U` </span></code></pre></td></tr></table></div></figure>
 
 </div>
 
@@ -201,12 +189,12 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   
 
 
-<time datetime="2012-05-18T17:59:00+08:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
+<time datetime="2014-01-08T22:14:52+08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ruby/'>ruby</a>
+    <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>
   
 </span>
 
@@ -215,7 +203,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://7d-life.com/blog/2012/05/18/install-rmagick-fail/" data-via="songlipeng2003" data-counturl="http://7d-life.com/blog/2012/05/18/install-rmagick-fail/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/" data-via="songlipeng2003" data-counturl="http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -228,10 +216,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/05/18/use-devise-on-legacy-database-width-md5/" title="Previous Post: use devise on legacy database width md5">&laquo; use devise on legacy database width md5</a>
+        <a class="basic-alignment left" href="/blog/2012/05/18/install-rmagick-fail/" title="Previous Post: install rmagick fail on macbook lion">&laquo; install rmagick fail on macbook lion</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/" title="Next Post: ubuntu php down to 5.4 from 5.5">ubuntu php down to 5.4 from 5.5 &raquo;</a>
       
     </p>
   </footer>
@@ -342,8 +328,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://7d-life.com/blog/2012/05/18/install-rmagick-fail/';
-        var disqus_url = 'http://7d-life.com/blog/2012/05/18/install-rmagick-fail/';
+        var disqus_identifier = 'http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/';
+        var disqus_url = 'http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/';
         var disqus_script = 'embed.js';
       
     (function () {

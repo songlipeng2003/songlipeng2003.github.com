@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rails | 舞命小丢]]></title>
   <link href="http://7d-life.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://7d-life.com/"/>
-  <updated>2012-05-18T18:07:17+08:00</updated>
+  <updated>2014-01-08T22:24:11+08:00</updated>
   <id>http://7d-life.com/</id>
   <author>
     <name><![CDATA[舞命小丢]]></name>
@@ -24,8 +24,8 @@
 
 <h1>Gemfile</h1>
 
-<p>gem 'devise', '~> 2.1'
-gem 'devise-encryptable'
+<p>gem &lsquo;devise&rsquo;, &lsquo;~> 2.1&rsquo;
+gem &lsquo;devise-encryptable&rsquo;
 ```</p>
 
 <p>实现自己的加密方式,我是使用的是md5：</p>
@@ -34,7 +34,7 @@ gem 'devise-encryptable'
 
 <h1>lib/devise/encryptable/encryptors/md5.rb</h1>
 
-<p>require 'digest/md5'</p>
+<p>require &lsquo;digest/md5&rsquo;</p>
 
 <p>module Devise
   module Encryptable</p>
@@ -59,7 +59,7 @@ end
 
 <h1>lib/devise/encryptors/md5.rb</h1>
 
-<p>require 'digest/md5'</p>
+<p>require &lsquo;digest/md5&rsquo;</p>
 
 <p>module Devise
   module Encryptors</p>
@@ -128,7 +128,7 @@ end
 
 <p>这里必须覆盖password_digest方法，因为password_digest中监测了password_salt是否为空</p>
 
-<p>在https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb中56行</p>
+<p>在<a href="https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C">https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C</a></p>
 
 <p>```ruby</p>
 

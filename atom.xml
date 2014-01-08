@@ -4,7 +4,7 @@
   <title><![CDATA[舞命小丢]]></title>
   <link href="http://7d-life.com/atom.xml" rel="self"/>
   <link href="http://7d-life.com/"/>
-  <updated>2012-05-18T18:07:17+08:00</updated>
+  <updated>2014-01-08T22:24:11+08:00</updated>
   <id>http://7d-life.com/</id>
   <author>
     <name><![CDATA[舞命小丢]]></name>
@@ -14,7 +14,56 @@
 
   
   <entry>
-    <title type="html"><![CDATA[install rmagick fail on macbook lion]]></title>
+    <title type="html"><![CDATA[Ubuntu Php Down to 5.4 From 5.5]]></title>
+    <link href="http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/"/>
+    <updated>2014-01-08T22:14:52+08:00</updated>
+    <id>http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5</id>
+    <content type="html"><![CDATA[<p><a href="http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10">http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># upgrade system, so you can add to ignore all updates later
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>
+</span><span class='line'># remove your php, apache, etc
+</span><span class='line'>sudo apt-get purge apache2 php5 libapache2-mod-php5 # add here your server packages
+</span><span class='line'>
+</span><span class='line'># change repositories to raring  (with backup)
+</span><span class='line'>sudo sed -i.bak "s/saucy/raring/g" /etc/apt/sources.list
+</span><span class='line'>
+</span><span class='line'># update and install server packages
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get install apache2 php5 libapache2-mod-php5 phpmyadmin #add here packages you need and make sure you install php5.4 and apache2.2
+</span><span class='line'>
+</span><span class='line'># change repositories back to saucy
+</span><span class='line'>sudo sed -i "s/raring/saucy/g" /etc/apt/sources.list
+</span><span class='line'>
+</span><span class='line'># ignore all current upgrades (package hold)
+</span><span class='line'>sudo apt-mark hold `aptitude -F%p --disable-columns search ~U` </span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Rmagick Fail on Macbook Lion]]></title>
     <link href="http://7d-life.com/blog/2012/05/18/install-rmagick-fail/"/>
     <updated>2012-05-18T17:59:00+08:00</updated>
     <id>http://7d-life.com/blog/2012/05/18/install-rmagick-fail</id>
@@ -73,7 +122,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[use devise on legacy database width md5]]></title>
+    <title type="html"><![CDATA[Use Devise on Legacy Database Width Md5]]></title>
     <link href="http://7d-life.com/blog/2012/05/18/use-devise-on-legacy-database-width-md5/"/>
     <updated>2012-05-18T17:01:00+08:00</updated>
     <id>http://7d-life.com/blog/2012/05/18/use-devise-on-legacy-database-width-md5</id>
@@ -225,7 +274,7 @@
 
 <p>这里必须覆盖password_digest方法，因为password_digest中监测了password_salt是否为空</p>
 
-<p>在https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb中56行</p>
+<p>在<a href="https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C">https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C</a></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -364,7 +413,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[attr attr_accessor attr_accessible attr_protected]]></title>
+    <title type="html"><![CDATA[Attr Attr_accessor Attr_accessible Attr_protected]]></title>
     <link href="http://7d-life.com/blog/2012/05/02/attr-attr-accessor-attr-accessible/"/>
     <updated>2012-05-02T21:39:00+08:00</updated>
     <id>http://7d-life.com/blog/2012/05/02/attr-attr-accessor-attr-accessible</id>
@@ -383,7 +432,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[git revert and reset]]></title>
+    <title type="html"><![CDATA[Git Revert and Reset]]></title>
     <link href="http://7d-life.com/blog/2012/04/28/git-revert-and-reset/"/>
     <updated>2012-04-28T11:44:00+08:00</updated>
     <id>http://7d-life.com/blog/2012/04/28/git-revert-and-reset</id>
@@ -407,14 +456,14 @@
 
 <p><a href="http://book.git-scm.com/4_undoing_in_git_-_reset,_checkout_and_revert.html">Git Community Book</a></p>
 
-<p><a href="http://rogerdudler.github.com/git-guide/index.zh.html">非常好的git - 简易指南</a></p>
+<p><a href="http://rogerdudler.github.com/git-guide/index.zh.html">非常好的git &ndash; 简易指南</a></p>
 
 <p><a href="http://blog.microsuncn.com/?p=1559">Git revert 撤销某个提交版本</a></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[use capistrano to deploy]]></title>
+    <title type="html"><![CDATA[Use Capistrano to Deploy]]></title>
     <link href="http://7d-life.com/blog/2012/04/25/use-capistrano-to-deploy/"/>
     <updated>2012-04-25T13:09:00+08:00</updated>
     <id>http://7d-life.com/blog/2012/04/25/use-capistrano-to-deploy</id>
@@ -445,7 +494,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[first post]]></title>
+    <title type="html"><![CDATA[First Post]]></title>
     <link href="http://7d-life.com/blog/2012/04/24/first-post/"/>
     <updated>2012-04-24T15:14:00+08:00</updated>
     <id>http://7d-life.com/blog/2012/04/24/first-post</id>

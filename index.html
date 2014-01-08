@@ -9,7 +9,7 @@
   <meta name="author" content="舞命小丢">
 
   
-  <meta name="description" content="错误信息 1
+  <meta name="description" content="http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10 1
 2
 3
 4
@@ -28,9 +28,7 @@
 17
 18
 19
-20
-$ gem install rmagick
-Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
+# upgrade &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -42,10 +40,11 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   <link rel="canonical" href="http://7d-life.com">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="舞命小丢" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -104,6 +103,85 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/">Ubuntu Php Down to 5.4 From 5.5</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-08T22:14:52+08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2014</time>
+        
+           | <a href="/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10">http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># upgrade system, so you can add to ignore all updates later
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>
+</span><span class='line'># remove your php, apache, etc
+</span><span class='line'>sudo apt-get purge apache2 php5 libapache2-mod-php5 # add here your server packages
+</span><span class='line'>
+</span><span class='line'># change repositories to raring  (with backup)
+</span><span class='line'>sudo sed -i.bak "s/saucy/raring/g" /etc/apt/sources.list
+</span><span class='line'>
+</span><span class='line'># update and install server packages
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get install apache2 php5 libapache2-mod-php5 phpmyadmin #add here packages you need and make sure you install php5.4 and apache2.2
+</span><span class='line'>
+</span><span class='line'># change repositories back to saucy
+</span><span class='line'>sudo sed -i "s/raring/saucy/g" /etc/apt/sources.list
+</span><span class='line'>
+</span><span class='line'># ignore all current upgrades (package hold)
+</span><span class='line'>sudo apt-mark hold `aptitude -F%p --disable-columns search ~U` </span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/05/18/install-rmagick-fail/">Install Rmagick Fail on Macbook Lion</a></h1>
     
     
@@ -122,7 +200,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <time datetime="2012-05-18T17:59:00+08:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/05/18/install-rmagick-fail/#disqus_thread">Comments</a>
+           | <a href="/blog/2012/05/18/install-rmagick-fail/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2012/05/18/install-rmagick-fail/">Comments</a>
         
       </p>
     
@@ -210,7 +289,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <time datetime="2012-05-18T17:01:00+08:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/05/18/use-devise-on-legacy-database-width-md5/#disqus_thread">Comments</a>
+           | <a href="/blog/2012/05/18/use-devise-on-legacy-database-width-md5/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2012/05/18/use-devise-on-legacy-database-width-md5/">Comments</a>
         
       </p>
     
@@ -365,7 +445,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <p>这里必须覆盖password_digest方法，因为password_digest中监测了password_salt是否为空</p>
 
-<p>在https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb中56行</p>
+<p>在<a href="https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C">https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C</a></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -415,7 +495,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <time datetime="2012-05-03T21:36:00+08:00" pubdate data-updated="true">May 3<span>rd</span>, 2012</time>
         
-         | <a href="/blog/2012/05/03/tmp-is-not-empty/#disqus_thread">Comments</a>
+           | <a href="/blog/2012/05/03/tmp-is-not-empty/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2012/05/03/tmp-is-not-empty/">Comments</a>
         
       </p>
     
@@ -559,7 +640,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <time datetime="2012-05-02T21:39:00+08:00" pubdate data-updated="true">May 2<span>nd</span>, 2012</time>
         
-         | <a href="/blog/2012/05/02/attr-attr-accessor-attr-accessible/#disqus_thread">Comments</a>
+           | <a href="/blog/2012/05/02/attr-attr-accessor-attr-accessible/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2012/05/02/attr-attr-accessor-attr-accessible/">Comments</a>
         
       </p>
     
@@ -607,7 +689,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <time datetime="2012-04-28T11:44:00+08:00" pubdate data-updated="true">Apr 28<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/04/28/git-revert-and-reset/#disqus_thread">Comments</a>
+           | <a href="/blog/2012/04/28/git-revert-and-reset/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2012/04/28/git-revert-and-reset/">Comments</a>
         
       </p>
     
@@ -634,7 +717,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <p><a href="http://book.git-scm.com/4_undoing_in_git_-_reset,_checkout_and_revert.html">Git Community Book</a></p>
 
-<p><a href="http://rogerdudler.github.com/git-guide/index.zh.html">非常好的git - 简易指南</a></p>
+<p><a href="http://rogerdudler.github.com/git-guide/index.zh.html">非常好的git &ndash; 简易指南</a></p>
 
 <p><a href="http://blog.microsuncn.com/?p=1559">Git revert 撤销某个提交版本</a></p>
 </div>
@@ -667,7 +750,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <time datetime="2012-04-25T13:09:00+08:00" pubdate data-updated="true">Apr 25<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/04/25/use-capistrano-to-deploy/#disqus_thread">Comments</a>
+           | <a href="/blog/2012/04/25/use-capistrano-to-deploy/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2012/04/25/use-capistrano-to-deploy/">Comments</a>
         
       </p>
     
@@ -727,7 +811,8 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 
 <time datetime="2012-04-24T15:14:00+08:00" pubdate data-updated="true">Apr 24<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/04/24/first-post/#disqus_thread">Comments</a>
+           | <a href="/blog/2012/04/24/first-post/#disqus_thread"
+             data-disqus-identifier="http://7d-life.com/blog/2012/04/24/first-post/">Comments</a>
         
       </p>
     
@@ -764,11 +849,15 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/05/18/install-rmagick-fail/">install rmagick fail on macbook lion</a>
+        <a href="/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/">Ubuntu Php Down to 5.4 From 5.5</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/05/18/use-devise-on-legacy-database-width-md5/">use devise on legacy database width md5</a>
+        <a href="/blog/2012/05/18/install-rmagick-fail/">Install Rmagick Fail on Macbook Lion</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/18/use-devise-on-legacy-database-width-md5/">Use Devise on Legacy Database Width Md5</a>
       </li>
     
       <li class="post">
@@ -776,11 +865,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
       </li>
     
       <li class="post">
-        <a href="/blog/2012/05/02/attr-attr-accessor-attr-accessible/">attr attr_accessor attr_accessible attr_protected</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/28/git-revert-and-reset/">git revert and reset</a>
+        <a href="/blog/2012/05/02/attr-attr-accessor-attr-accessible/">Attr Attr_accessor Attr_accessible Attr_protected</a>
       </li>
     
   </ul>
@@ -795,7 +880,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
   <a href="https://github.com/songlipeng2003">@songlipeng2003</a> on GitHub
   
   <script type="text/javascript">
-    $.domReady(function(){
+    $(document).ready(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -813,23 +898,6 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
     });
   </script>
   <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("songlipeng2003", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/songlipeng2003" class="twitter-follow-button" data-show-count="false">Follow @songlipeng2003</a>
-  
 </section>
 
 
@@ -858,7 +926,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - 舞命小丢 -
+  Copyright &copy; 2014 - 舞命小丢 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -873,7 +941,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
@@ -884,7 +952,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
+  js = d.createElement(s); js.id = id; js.async = true;
   js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
@@ -906,7 +974,7 @@ Buildingnative extensions. This could take a while...ERROR: Error &hellip;">
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

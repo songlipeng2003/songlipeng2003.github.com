@@ -2,42 +2,50 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://7d-life.com/blog/2012/04/24/first-post/</loc>
-        <lastmod>2012-04-28T11:37:21+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/blog/2012/04/25/use-capistrano-to-deploy/</loc>
-        <lastmod>2012-04-28T12:37:53+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/blog/2012/04/28/git-revert-and-reset/</loc>
-        <lastmod>2012-04-28T12:35:59+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/blog/2012/05/02/attr-attr-accessor-attr-accessible/</loc>
-        <lastmod>2012-05-03T09:51:48+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/blog/2012/05/03/tmp-is-not-empty/</loc>
-        <lastmod>2012-05-03T21:42:52+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/blog/2012/05/18/use-devise-on-legacy-database-width-md5/</loc>
-        <lastmod>2012-05-18T17:38:06+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/blog/2012/05/18/install-rmagick-fail/</loc>
-        <lastmod>2012-05-18T18:07:17+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/</loc>
+        <lastmod>2014-01-08T22:24:11+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/about-us/</loc>
-        <lastmod>2012-04-28T12:28:14+08:00</lastmod>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/blog/archives/</loc>
-        <lastmod>2012-05-18T18:07:17+08:00</lastmod>
+        <lastmod>2014-01-08T22:24:11+08:00</lastmod>
     </url>
     <url>
         <loc>http://7d-life.com/</loc>
-        <lastmod>2012-05-18T18:07:17+08:00</lastmod>
+        <lastmod>2014-01-08T22:24:11+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://7d-life.com/robots.txt</loc>
+        <lastmod>2014-01-08T21:57:40+08:00</lastmod>
     </url>
 </urlset>

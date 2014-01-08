@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | 舞命小丢]]></title>
   <link href="http://7d-life.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://7d-life.com/"/>
-  <updated>2012-05-18T18:07:17+08:00</updated>
+  <updated>2014-01-08T22:24:11+08:00</updated>
   <id>http://7d-life.com/</id>
   <author>
     <name><![CDATA[舞命小丢]]></name>
@@ -22,15 +22,15 @@
 
 <p>```
 $ gem install rmagick
-Buildingnative extensions.  This could take a while...ERROR:  Error installing rmagick:        ERROR:Failed to build gem native extension.        /Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/bin/ruby extconf.rb
-checking forRuby version >=1.8.5... yes
-extconf.rb:128:UseRbConfig instead of obsolete and deprecated Config.checking for clang... yes
-checking forMagick-config... yes
-checking forImageMagick version >=6.4.9... yes
-checking for HDRI disabled version of ImageMagick... yes
-checking for stdint.h...<strong><em> extconf.rb failed </em></strong>Couldnot create Makefile due to some reason, probably lack of
+Buildingnative extensions.  This could take a while&hellip;ERROR:  Error installing rmagick:        ERROR:Failed to build gem native extension.        /Users/dhiemstra/.rvm/rubies/ruby-1.9.3-head/bin/ruby extconf.rb
+checking forRuby version >=1.8.5&hellip; yes
+extconf.rb:128:UseRbConfig instead of obsolete and deprecated Config.checking for clang&hellip; yes
+checking forMagick-config&hellip; yes
+checking forImageMagick version >=6.4.9&hellip; yes
+checking for HDRI disabled version of ImageMagick&hellip; yes
+checking for stdint.h&hellip;<strong><em> extconf.rb failed </em></strong>Couldnot create Makefile due to some reason, probably lack of
 necessary libraries and/or headers.  Check the mkmf.log file for more
-details.  You may need configuration options.Provided configuration options:        --with-opt-dir</p>
+details.  You may need configuration options.Provided configuration options:        &mdash;with-opt-dir</p>
 
 <pre><code>    --without-opt-dir
     --with-opt-include
@@ -66,8 +66,8 @@ brew install imagemagick --disable-openmp
 
 <h1>Gemfile</h1>
 
-<p>gem 'devise', '~> 2.1'
-gem 'devise-encryptable'
+<p>gem &lsquo;devise&rsquo;, &lsquo;~> 2.1&rsquo;
+gem &lsquo;devise-encryptable&rsquo;
 ```</p>
 
 <p>实现自己的加密方式,我是使用的是md5：</p>
@@ -76,7 +76,7 @@ gem 'devise-encryptable'
 
 <h1>lib/devise/encryptable/encryptors/md5.rb</h1>
 
-<p>require 'digest/md5'</p>
+<p>require &lsquo;digest/md5&rsquo;</p>
 
 <p>module Devise
   module Encryptable</p>
@@ -101,7 +101,7 @@ end
 
 <h1>lib/devise/encryptors/md5.rb</h1>
 
-<p>require 'digest/md5'</p>
+<p>require &lsquo;digest/md5&rsquo;</p>
 
 <p>module Devise
   module Encryptors</p>
@@ -170,7 +170,7 @@ end
 
 <p>这里必须覆盖password_digest方法，因为password_digest中监测了password_salt是否为空</p>
 
-<p>在https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb中56行</p>
+<p>在<a href="https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C">https://github.com/plataformatec/devise-encryptable/blob/master/lib/devise/encryptable/model.rb%E4%B8%AD56%E8%A1%8C</a></p>
 
 <p>```ruby</p>
 

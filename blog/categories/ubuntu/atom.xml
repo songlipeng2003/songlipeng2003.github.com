@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ubuntu | 舞命小丢]]></title>
+  <link href="http://7d-life.com/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://7d-life.com/"/>
+  <updated>2014-01-08T22:24:11+08:00</updated>
+  <id>http://7d-life.com/</id>
+  <author>
+    <name><![CDATA[舞命小丢]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ubuntu php down to 5.4 from 5.5]]></title>
+    <link href="http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5/"/>
+    <updated>2014-01-08T22:14:52+08:00</updated>
+    <id>http://7d-life.com/blog/2014/01/08/ubuntu-php-down-to-5-dot-4-from-5-dot-5</id>
+    <content type="html"><![CDATA[<p><a href="http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10">http://superuser.com/questions/662824/downgrade-php-from-5-5-3-to-5-4-x-in-ubuntu-13-10</a></p>
+
+<p>```</p>
+
+<h1>upgrade system, so you can add to ignore all updates later</h1>
+
+<p>sudo apt-get update
+sudo apt-get upgrade</p>
+
+<h1>remove your php, apache, etc</h1>
+
+<p>sudo apt-get purge apache2 php5 libapache2-mod-php5 # add here your server packages</p>
+
+<h1>change repositories to raring  (with backup)</h1>
+
+<p>sudo sed -i.bak &ldquo;s/saucy/raring/g&rdquo; /etc/apt/sources.list</p>
+
+<h1>update and install server packages</h1>
+
+<p>sudo apt-get update
+sudo apt-get install apache2 php5 libapache2-mod-php5 phpmyadmin #add here packages you need and make sure you install php5.4 and apache2.2</p>
+
+<h1>change repositories back to saucy</h1>
+
+<p>sudo sed -i &ldquo;s/raring/saucy/g&rdquo; /etc/apt/sources.list</p>
+
+<h1>ignore all current upgrades (package hold)</h1>
+
+<p>sudo apt-mark hold <code>aptitude -F%p --disable-columns search ~U</code>
+```</p>
+]]></content>
+  </entry>
+  
+</feed>
